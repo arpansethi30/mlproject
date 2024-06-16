@@ -1,6 +1,9 @@
 import os
 import sys
 import pandas as pd
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
 from src.exception import CustomException
 from src.logger import logging
 from sklearn.model_selection import train_test_split
